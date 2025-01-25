@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<h1 title="Scritta">Forms</h1>
+<title>Forms</title>
+
+<style>
+    form{
+        max-width: 400px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color: aquamarine;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input [type="text"], input[type=email], input[type="password"] {
+        width: 100%;
+        padding: auto;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+
+    }
+    input[type="radio"], input[type="checkbox"]{
+        margin-right: 10px;
+
+    }
+    button{
+        background-color: burlywood;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover{
+        
+    }
+
+</style>
+
+    <form action="url_destinazione" method="post">
+    <label for="nome">nome</label>
+    <input type="text" id="nome" name="nome" placeholder="inserisci il tuo nome">
+
+    <label for="cognome">cognome</label>
+    <input type="text" id="nome" name="cognome" placeholder="inserisci il tuo cognome">
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="inserisci la tua E-mail" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="inserisci la tua password" required>
+
+    <p>Seleziona il tuo genere</p>
+    <input type="radio" id="maschio" name="genere" value="maschio">
+    <label for="maschio">maschio</label>
+
+    <input type="radio" id="femmina" name="genere" value="femmina">
+    <label for="femmina">femmmina</label>
+    
+    <p>Seleziona i tuoi interessi</p>
+    <input type="checkbox" id="sport" name="interesse" value="sport">
+    <label for="sport">sport</label>
+
+    <input type="checkbox" id="arte" name="interesse" value="arte">
+    <label for="arte">arte</label>
+
+    <label for="lingua">Seleziona la tua lingua</label>
+    <select id="lingua" name="lingua">
+        <option value="italiano"> italiano</option>
+        <option value="inglese"> inglese</option>
+        <option value="arabo"> arabo</option>
+    </select>
+    
+
+
+
+    
+    <button type="submit">Invia</button>
+
+</form>
+</html>
