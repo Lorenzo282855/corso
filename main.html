@@ -37,13 +37,46 @@
             <p>Come contattarci.</p>
         </section>
         <section id="list">
-            <h2>Lista 1 </h2>
+            <h2>Lista 1</h2>
             <ul>
                 <li>Elemento 1</li>
                 <li>Elemento 2</li>
                 <li>Elemento 3</li>
             </ul>
         </section>
+       
+        <section id="table">
+            <h2>Tabella Base</h2>
+            <table border="1">
+                <tr>
+                    <th>Titolo 1</th>
+                    <th>Titolo 2</th>
+                    <th>Titolo 3</th>
+                </tr>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                </tr>
+                <tr>
+                    <td>Dato 4</td>
+                    <td>Dato 5</td>
+                    <td>Dato 6</td>
+                </tr>
+            </table>
+        </section>
     </main>
+    <section id="form">
+        <h2>Modulo di Contatto</h2>
+        <form action="/submit" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Messaggio:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Invia">
+        </form>
+    </section>
 </body>
 </html>
